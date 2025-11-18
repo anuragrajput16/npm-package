@@ -1,0 +1,127 @@
+.app-container {
+  display: inline-flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Waffle button like Google icon */
+.waffle-btn-container {
+  position: relative;
+}
+
+.waffle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waffle-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Popup (like Bootstrap dropdown) */
+.waffle-popup {
+  position: absolute;
+  top: 42px; /* appear below the icon */
+  right: 0;
+  background: rgb(70, 68, 68);
+  border-radius: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 0px 10px 10px;
+  animation: dropdownFade 0.2s ease;
+  z-index: 1000;
+  overflow-y: auto;
+  min-width: max-content;
+  max-height: 448px;
+}
+.waffle-container {
+  background: rgb(0, 0, 0);
+  padding: 24px;
+  border-radius: 24px;
+
+}
+
+/* Waffle grid */
+.waffle-grid {
+  display: grid;
+  overflow: visible;
+}
+
+/* Tile styles */
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 13px;
+  color: #e3e3e3;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  height: 84px;
+  width: 84px;
+  padding: 6px;
+}
+
+.tile-link {
+  text-decoration: none !important;
+}
+.tile:hover {
+  background:#939aa636;
+}
+
+.tile-icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.waffle-tile {
+  overflow: visible !important;
+}
+
+.waffle-btn-container {
+  overflow: visible !important;
+}
+
+.waffle-grid {
+  overflow: visible !important;
+}
+
+
+/* Custom Scrollbar */
+.waffle-popup::-webkit-scrollbar {
+  width: 8px;
+}
+
+.waffle-popup::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 12px;
+}
+
+.waffle-popup::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.waffle-popup::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
