@@ -9,7 +9,7 @@ const waffleData = [
     menuTitle: "",
     menuIcon: "http://uat-media.dropworks.app/studio/DropWorksSTUDIOlogoPurpleNoBackground1024X1024.png",
     link: "https://uat.dropworks.app/featured",
-    openIn: "_blank",
+    openIn: "_self",
     subMenu: [
       {
         id: 1,
@@ -39,7 +39,7 @@ const waffleData = [
     menuTitle: "",
     menuIcon: "https://uat-media.dropworks.app/music-marketplace/DropWorksMUSICMARKETPLACElogoPurpleNoBackground1024X1024.png",
     link: "https://uat.dropworks.app/music-marketplace",
-    openIn: "_blank",
+    openIn: "_self",
     subMenu: [
       {
         id: 1,
@@ -76,7 +76,7 @@ const waffleData = [
     menuTitle: "",
     menuIcon: "https://uat-media.dropworks.app/club-chain/DropWorksClubChainlogoPurpleNoBackground1024X1024.png",
     link: "https://clubchain.dropworks.app",
-    openIn: "_blank",
+    openIn: "_self",
     subMenu: [
       {
         id: 1,
@@ -127,7 +127,7 @@ const waffleData = [
     menuTitle: "",
     menuIcon: "https://uat-media.dropworks.app/dropto/DropWorksDROPTOSECTIONlogoPurpleNoBackground1024X1024.png",
     link: "https://dropto.dropworks.app",
-    openIn: "_blank",
+    openIn: "_self",
     subMenu: [
       {
         id: 1,
