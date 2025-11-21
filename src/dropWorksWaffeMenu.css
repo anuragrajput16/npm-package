@@ -30,45 +30,47 @@
 /* Popup */
 .waffle-popup {
   position: absolute;
-  top: 42px;
+  top: 60px;
   right: 5px;
   background:rgb(48 47 47);
-  border-radius: 28px;
+  border-radius: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 5px 0 5px 5px;
+  padding: 10px 0 10px 10px;
   animation: dropdownFade 0.2s ease;
   z-index: 1000;
   overflow-y: scroll;
   min-width: max-content;
-  max-height: 448px;
+  max-height: 600px;
 }
 
 .waffle-container {
   background: url('https://clubchain.dropworks.app/static/media/2560x1440.a0ca60925711082fa877.png') 0% 0% / 100% 100% no-repeat fixed;
   padding: 20px;
-  border-radius: 24px;
+  border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .waffle-menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
 }
 
 .menu-container {
   border-radius: 12px;
-  width: 250px;
+  width: 340px;
 }
 
 .menu-header {
-  display: flex;
-  align-items: end;
-  gap: 12px;
+  display: grid;
+  flex-wrap: wrap;
+  gap:0px;
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .menu-icon {
-  width: 75px;
-  height: 75px;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
   object-fit: cover;
   cursor: pointer;
@@ -123,13 +125,13 @@
 
 /* Scrollbar */
 .waffle-popup::-webkit-scrollbar {
-  width: 5px !important;
+  width: 10px !important;
 }
 
 .waffle-popup::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 12px;
-  width: 8px !important;
+  width: 10px !important;
   border: none;
   margin-bottom: 34px;
   margin-top: 34px;
@@ -181,8 +183,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .menu-icon {
-    width: 55px;
-    height: 55px;
+    height: 100%;
+    width: 100%;
   }
 
   .sub-menu-icon {
@@ -191,8 +193,7 @@
   }
 
   .menu-container {
-    border-radius: 12px;
-    width: 200px;
+    width: 300px;
   }
 }
 
@@ -202,13 +203,19 @@
 @media (min-width: 481px) and (max-width: 1024px) {
   .waffle-popup {
     right: 5px;
-    width: 240px;
-    max-height: 420px;
   }
 
   .menu-container {
     border-radius: 12px;
-    width: 240px;
+  }
+
+
+  .waffle-popup {
+    height: 480px;
+  }
+
+  .menu-container {
+    width: 250px;
   }
 
   .sub-menu-container {
@@ -220,8 +227,8 @@
   }
 
   .menu-icon {
-    width: 65px;
-    height: 65px;
+    height: 100%;
+    width: 100%;
   }
 
   .sub-menu-icon {
@@ -234,10 +241,6 @@
    LAPTOP - 1025px to 1440px
 =========================== */
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .waffle-popup {
-    width: 300px;
-  }
-
   .sub-menu-container {
     display: grid;
     flex-wrap: wrap;
@@ -245,10 +248,17 @@
     /* justify-content: space-between; */
     grid-template-columns: repeat(3, 1fr);
   }
+  .waffle-popup {
+    height: 480px;
+  }
+
+  .menu-container {
+    width: 300px;
+  }
 
   .menu-icon {
-    width: 70px;
-    height: 70px;
+    height: 100%;
+    width: 100%;
   }
 
   .sub-menu-icon {
@@ -261,9 +271,6 @@
    LARGE SCREENS - 1441px+
 =========================== */
 @media (min-width: 1441px) {
-  .waffle-popup {
-    width: 300px;
-  }
 
   .sub-menu-container {
     display: grid;
@@ -274,8 +281,8 @@
   }
 
   .menu-icon {
-    width: 75px;
-    height: 75px;
+    height: 100%;
+    width: 100%;
   }
 
   .sub-menu-icon {

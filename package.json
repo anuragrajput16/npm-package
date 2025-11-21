@@ -1,6 +1,6 @@
 {
   "name": "@anuragrajput16/dropworks-waffle",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
